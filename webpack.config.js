@@ -12,8 +12,14 @@ module.exports = {
 				test: /\.js/
 				, exclude: /node_modules/
 				, loader: "babel"
-			}
-			, {
+			},
+			{ test: /\.css$/,
+				loader: "style!css",
+				exclude: [/node_modules/]
+			},
+
+			{
+				// test: /\.scss$/
 				test: /\.sass/
 				, exclude: /node_modules/
 				, loader: "style!css!sass"
@@ -30,12 +36,12 @@ module.exports = {
 	}
 	// output information of the production file
 	, output: {
-		path: __dirname + "/"
-		, filename: "bundle.js"
+		path: __dirname + "/dist",
+		filename: "bundle.js"
 	}
 	// Where to find index.html
 	// Only necessary for webpack dev server
 	, devServer: {
-		contentBase: "./"
+		contentBase: "./dist"
 	}
 };
