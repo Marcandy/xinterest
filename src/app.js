@@ -13,7 +13,7 @@ import "./cheese.sass";
 
 
 angular.module('xinterest', [uiRouter])
-  .controller('menuCtrl', menuCtrl )
+  .controller('menuCtrl', mainCtrl )
   .service('mainService', mainService)
   .directive('home', home)
   .config( function($stateProvider, $urlRouterProvider) {
