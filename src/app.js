@@ -1,15 +1,18 @@
 import angular from "angular";
 import uiRouter from 'angular-ui-router';
 
+var $ = require("jquery");
+import bootstrap from 'bootstrap';
+
 // import config from './config';
 
-import menuCtrl from "./menuCtrl";
+import mainCtrl from "./mainCtrl";
 import mainService from './mainService';
 import home from './directives/home.js';
 import homeHtml from './directives/home.html';
 
 
-import "./cheese.sass";
+import "./cheese.scss";
 
 
 angular.module('xinterest', [uiRouter])
