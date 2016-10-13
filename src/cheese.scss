@@ -11,6 +11,12 @@
     height: 60px;
     display: inline-block;
     width: 100%;
+
+}
+
+#logo {
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
 .nav li {
@@ -36,7 +42,7 @@
 }
 
 #settings a {
-    padding: 18px;
+    padding: 10px;
     height: 24px;
     font-size: 10px;
     line-height: 24px;
