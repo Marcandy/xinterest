@@ -1,22 +1,33 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+
+
 
 * {
     margin: 0;
     padding: 0;
 }
 
+.nav-container {
+    height: 60px;
+    box-shadow: 0px 2px 8px rgba(31, 127, 92, 1);
+}
+
 //#F2F3EE
 .nav {
-    background: black;
+    position: relative;
+    background: #303030;
     height: 60px;
     display: inline-block;
     width: 100%;
 
 }
 
+
+
 #logo {
-    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    -webkit-clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%)
 }
 
 .nav li {
@@ -41,7 +52,7 @@
     background-color: #2e2e2e;
 }
 
-#settings a {
+#logobar a {
     padding: 10px;
     height: 24px;
     font-size: 10px;
@@ -51,6 +62,8 @@
 #search {
     width: 357px;
     margin: 4px;
+    position: absolute;
+    left: 37%;
 }
 #search_text{
     width: 297px;
@@ -83,10 +96,10 @@
     background: rgb(64, 151, 119);
 }
 
-//url(search.png)
+//url('icon-search')
 #search_button {
     border: 0 none;
-    background: #1f7f5c  center no-repeat;
+    background: #1f7f5c url('../../dist/assets/images/search.png') center no-repeat;
     width: 60px;
     float: left;
     padding: 0;
@@ -95,14 +108,15 @@
     cursor: pointer;
 }
 
-#otption {
-    text-align: left;
+#menu {
+    position: absolute;
+    right: 0;
 }
-#options a{
+#menu a{
     border-left: 0 none;
 
 }
-#options>a {
+#menu>a {
     // background-image: url(triangle.png);
     background-position: 85% center;
     background-repeat: no-repeat;
@@ -126,7 +140,7 @@
     border-bottom: 1px solid #2e2e2e;
 }
 
-#options:hover .subnav {
+#menu:hover .subnav {
     visibility: visible;
     top: 100%;
     opacity: 1;

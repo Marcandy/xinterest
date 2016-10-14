@@ -1,60 +1,61 @@
 <!DOCTYPE html>
 <html lang="en" ng-app='xinterest'>
+
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
-  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <title>xinterest</title>
+    <title>xinterest</title>
 
 </head>
+
 <body>
 
-<!-- <div class="menu">
-  Logo
+    <div class="nav-container">
+        <ul class="nav">
+            <li id="logobar">
+                <a href="#"><img id='logo' src="assets/images/gootest.jpg" /></a>
+            </li>
 
-  <input type="text" name="search" placeholder="Search">
+            <li id="search">
+                <form action="" method="get">
+                    <input type="text" name="search_text" id="search_text" placeholder="Search" />
+                    <!--font awesome test -->
+                    <!-- <i id='search_button' class="fa fa-search" aria-hidden="true"></i> -->
 
-  Menu
-</div>
-
-gogo -->
-<ul class="nav">
-    <li id="settings">
-        <a href="#"><img id='logo' src="assets/images/gootest.jpg" /></a>
-    </li>
-
-    <li id="search">
-        <form action="" method="get">
-            <input type="text" name="search_text" id="search_text" placeholder="Search"/>
-            <input type="button" name="search_button" id="search_button"></a>
-        </form>
-    </li>
-    <li id="options">
-        <a href="#">Menu</a>
-        <ul class="subnav">
-            <li><a href="#">Categories</a></li>
+                    <input type="button" name="search_button" id="search_button"></a>
+                </form>
+            </li>
+            <li id="menu">
+                <a href="#">Menu</a>
+                <ul class="subnav">
+                    <li><a href="#">Categories</a></li>
+                </ul>
+            </li>
         </ul>
-    </li>
-</ul>
+    </div>
 
 
 
-<!-- <span class="glyphicon glyphicon-search" aria-hidden="true"></span> -->
+    <!-- <span class="glyphicon glyphicon-search" aria-hidden="true"></span> -->
 
 
 
-<ui-view></ui-view>
+    <ui-view></ui-view>
 
-<script src="prefixfree-1.0.7.js" type="text/javascript"></script>
-<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-<script src="bundle.js" ></script>
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js" charset="utf-8"></script> -->
-<!-- <script src="app.js" charset="utf-8"></script>
+    <!-- <script src="prefixfree-1.0.7.js" type="text/javascript"></script> -->
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+    <script src="bundle.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js" charset="utf-8"></script> -->
+    <!-- <script src="app.js" charset="utf-8"></script>
 <script src="mainCtrl.js" charset="utf-8"></script>
 <script src="mainService.js" charset="utf-8"></script> -->
 </body>
+
 </html>

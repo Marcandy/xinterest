@@ -12,8 +12,8 @@ import home from './directives/home.js';
 import homeHtml from './directives/home.html';
 
 
-import "./cheese.scss";
-
+import "./styles/cheese.scss";
+import './styles/layout.scss';
 
 angular.module('xinterest', [uiRouter])
   .controller('menuCtrl', mainCtrl )
@@ -26,6 +26,7 @@ angular.module('xinterest', [uiRouter])
         template: '<home></home>',
         // it needs the directive name iside the bracket tag just uiviews not
         url: '/'
+        // css: './styles/layout.scss'
 
       });
 

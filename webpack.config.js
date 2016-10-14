@@ -24,10 +24,16 @@ module.exports = {
 				, exclude: /node_modules/
 				, loader: "style!css!sass"
 			}
-			, {
+			,
+			{
 				test: /\.html$/
 				, loader: "html"
+			},
+			{
+				test: /\.(jpe?g|png|gif|svg)$/,
+				loader: "file"
 			}
+
 		]
 	}
 	// determines what file types webpack should resolve
