@@ -1,12 +1,17 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import homepage from './home.html';
+// var $ = require("jquery");
+// import bootstrap from 'bootstrap';
+
 // import mainService from '../mainService';
 
 function home() {
   return {
     template: homepage,
     restrict: 'E',
+    // replace: true,
+    // transclude: false,
     controller: function($scope, mainService) {
       mainService.getBoards()
         .then(function(results) {
@@ -23,11 +28,9 @@ function home() {
         .then(function(results) {
           $scope.pins = results;
         });
-
-
+      }
 
     }
   }
-}
 
 export default home;

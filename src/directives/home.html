@@ -1,4 +1,4 @@
-<main>
+
 
     <!-- <div id='container'>
         <h2>Show board</h2>
@@ -25,7 +25,7 @@
         </ul>
     </div> -->
 
-<div class="wf-container">
+<!-- <div class="wf-container">
   <div class="wf-box" ng-repeat='pin in pins' >
     <img ng-src={{pin.image.original.url}} alt="" />
 
@@ -35,6 +35,30 @@
     </div>
 
   </div>
-</div>
+</div> -->
 
-</main>
+
+<div class="container" ng-repeat='pin in pins'>
+    <div class="row" >
+        <h2>Pinterest</h2>
+
+        <p>Best viewed <a href="http://bootsnipp.com/iframe/Zkk0O" target="_blank">full screen</a>
+        </p>
+        <hr>
+        <section id="pinBoot">
+
+            <article class="white-panel"> <img ng-src={{pin.image.original.url}} alt="" />
+                <h4><a href="#">Title 1</a></h4>
+                <p>Content Here</p>
+            </article>
+
+        </section>
+
+
+        <hr>
+
+
+    </div>
+
+
+</div>
