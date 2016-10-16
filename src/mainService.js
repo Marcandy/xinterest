@@ -33,6 +33,14 @@ this.pins = function() {
     return info.data.data;
     })
   }
+
+  //----------pin-post-----------------
+
+  this.boardPost = function() {
+    return http.post
+  }
+
+
 }
 
 export default mailService;

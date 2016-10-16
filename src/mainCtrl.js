@@ -20,6 +20,13 @@ function menuCtrl ($scope, mainService) {
 
   $scope.search = function(str) {};
     //state.go to search result view and directives
+
+    var waterfall = new Waterfall({
+    containerSelector: '.wf-container',
+    boxSelector: '.wf-box',
+    minBoxWidth: 250
+    
+});
 }
 //)
 export default menuCtrl;

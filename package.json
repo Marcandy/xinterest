@@ -32,6 +32,7 @@
     "cors": "^2.8.1",
     "express": "^4.14.0",
     "mongoose": "^4.6.3",
-    "node-sass": "^3.10.1"
+    "node-sass": "^3.10.1",
+    "waterfall.js": "^1.1.0"
   }
 }

@@ -3,6 +3,8 @@ import uiRouter from 'angular-ui-router';
 
 var $ = require("jquery");
 import bootstrap from 'bootstrap';
+// use querySelector/querySelectorAll internally
+
 
 // import config from './config';
 

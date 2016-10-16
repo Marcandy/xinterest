@@ -1,32 +1,40 @@
 <main>
-  {{test}}
 
-<div class="">
-    <h2>Show board</h2>
+    <!-- <div id='container'>
+        <h2>Show board</h2>
 
-  <p>
-    {{board.id}}
-    {{board.url}}
-  </p>
+        <p>
+            {{board.id}} {{board.url}}
+        </p>
 
-    <img ng-src={{board.image["60x60"].url}} alt="" />
+        <img ng-src={{board.image[ "60x60"].url}} alt="" />
+    </div>
+
+    <div class="">
+        <h3>Suggested</h3> {{suggested}}
+    </div> -->
+
+    <!-- <div id='container'>
+        <ul id='myContent'>
+            <li ng-repeat='pin in pins '>
+                <h2>Pin</h2>
+
+                <img ng-src={{pin.image.original.url}} alt="" />
+
+            </li>
+        </ul>
+    </div> -->
+
+<div class="wf-container">
+  <div class="wf-box" ng-repeat='pin in pins' >
+    <img ng-src={{pin.image.original.url}} alt="" />
+
+    <div class="content">
+      <h3>Pin</h3>
+      <p>Content Here</p>
+    </div>
+
+  </div>
 </div>
-
-  <div class="">
-    <h3>Suggested</h3>
-    {{suggested}}
-  </div>
-
-  <div class="">
-    <ul>
-      <li ng-repeat='pin in pins '>
-        <h2>Pin</h2>
-
-        <img ng-src={{pin.image.original.url}} alt="" />
-
-      </li>
-    </ul>
-
-  </div>
 
 </main>

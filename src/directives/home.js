@@ -23,6 +23,9 @@ function home() {
         .then(function(results) {
           $scope.pins = results;
         });
+
+
+
     }
   }
 }
