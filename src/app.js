@@ -13,17 +13,21 @@ import mainCtrl from "./mainCtrl";
 import mainService from './mainService';
 import home from './directives/home.js';
 import homeHtml from './directives/home.html';
+import pin from './directives/pinPost.js';
+import pinPosthtml from './directives/pinPost.html';
 
 
 
 import "./styles/cheese.scss";
 import './styles/layout.scss';
 import '../dist/style.css'
+import './styles/pinpost.scss';
 
 angular.module('xinterest', [uiRouter])
   .controller('menuCtrl', mainCtrl )
   .service('mainService', mainService)
   .directive('home', home)
+  .directive('pin',  pin)
   .config( function($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('home', {
@@ -34,6 +38,10 @@ angular.module('xinterest', [uiRouter])
         // css: './styles/layout.scss'
 
 
+      })
+      .state('pinPost', {
+        url: '/pinPost',
+        template: '<pin></pin>'
       });
 
 

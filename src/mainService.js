@@ -37,7 +37,7 @@ this.pins = function() {
   //----------pin-post-----------------
 
   this.boardPost = function() {
-    return http.post
+    return http.post(baseUrl + 'pins/' + access)
   }
 
 
