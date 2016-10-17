@@ -18,6 +18,7 @@
     "html-loader": "^0.4.4",
     "image-loader": "0.0.1",
     "jquery": "^3.1.1",
+    "npm-install-webpack-plugin": "^4.0.4",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",

@@ -4,8 +4,10 @@ module.exports = {
 		// first element is only necessary for webpack dev server
 		"webpack-dev-server/client?http://localhost:8080",
 		"./src/app.js"
-	]
-	, module: {
+	],
+
+
+	 module: {
 		// informs webpack what to do with different file types
 		loaders: [
 			{
@@ -35,9 +37,10 @@ module.exports = {
 			}
 
 		]
-	}
+	},
+
 	// determines what file types webpack should resolve
-	, resolve: {
+	 resolve: {
 		extensions: [ "", ".js", ".css" ]
 	}
 	// output information of the production file

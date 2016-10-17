@@ -37,28 +37,32 @@
   </div>
 </div> -->
 
+  <div class="container" >
+      <div class="row"  >
 
-<div class="container" ng-repeat='pin in pins'>
-    <div class="row" >
-        <h2>Pinterest</h2>
+    <hr>
 
-        <p>Best viewed <a href="http://bootsnipp.com/iframe/Zkk0O" target="_blank">full screen</a>
-        </p>
-        <hr>
-        <section id="pinBoot">
 
-            <article class="white-panel"> <img ng-src={{pin.image.original.url}} alt="" />
-                <h4><a href="#">Title 1</a></h4>
-                <p>Content Here</p>
+          <section id="pinBoot">
+            <article class="white-panel"> <img src="http://i.imgur.com/8lhFhc1.gif" alt="">
+              <h4><a href="#">Title 2</a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </article>
 
-        </section>
 
 
-        <hr>
+              <article class="white-panel" ng-repeat='pin in pins' >
+                <img ng-src={{pin.image.original.url}} alt="" />
+                  <h4><a href="#">Title 1</a></h4>
+                  <p>Content Here</p>
+              </article>
+
+          </section>
 
 
-    </div>
+          <hr>
 
 
-</div>
+      </div>
+
+  </div>

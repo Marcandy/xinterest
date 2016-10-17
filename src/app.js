@@ -1,7 +1,8 @@
 import angular from "angular";
 import uiRouter from 'angular-ui-router';
 
-var $ = require("jquery");
+// var $ = require("jquery");
+import '../node_modules/jquery/dist/jquery.js';
 import bootstrap from 'bootstrap';
 // use querySelector/querySelectorAll internally
 
@@ -17,7 +18,7 @@ import homeHtml from './directives/home.html';
 
 import "./styles/cheese.scss";
 import './styles/layout.scss';
-// import './styles/style.css';
+import '../dist/style.css'
 
 angular.module('xinterest', [uiRouter])
   .controller('menuCtrl', mainCtrl )

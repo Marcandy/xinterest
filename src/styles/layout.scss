@@ -1,50 +1,84 @@
-//
-// #container {
-// 	width: 1200px;
-// 	margin: 0 auto;
-// }
-//
-// #myContent {
-// 	-moz-column-count: 6;
-// 	-moz-column-gap: 0px;
-// 	-webkit-column-count: 6;
-// 	-webkit-column-gap: 0px;
-// 	column-count: 6;
-// 	column-gap: 0px;
-// 	width: 1200px;
-// }
-//
-// #myContent img{
-// 	display: inline-block;
-// 	margin-bottom: 0px;
-// 	width: 100%;
-// }
-//
-//
-// #container {
-// 	width: 1200px;
-// 	margin: 0 auto;
-// }
-//
-// // -------------------------------
-//
-// #myContent {
-// 	-moz-column-count: 6;
-// 	-moz-column-gap: 0px;
-// 	-webkit-column-count: 6;
-// 	-webkit-column-gap: 0px;
-// 	column-count: 6;
-// 	column-gap: 0px;
-// 	width: 1200px;
-// }
-//
-// #myContent img{
-// 	display: inline-block;
-// 	margin-bottom: 0px;
-// 	width: er { margin: 0 auto; }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+
+
+body {
+ background-color:#eee;
+}
+
+#pinBoot {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.white-panel {
+  position: absolute;
+  background: white;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
 /*
-Ref:
-Thanks to:
-http://www.jqueryscript.net/layout/Simple-jQuery-Plugin-To-Create-Pinterest-Style-Grid-Layout-Pinterest-Grid.html
+stylize any heading tags withing white-panel below
 */
+
+.white-panel h1 {
+  font-size: 1em;
+}
+.white-panel h1 a {
+  color: #A92733;
+}
+.white-panel:hover {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  margin-top: -5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
