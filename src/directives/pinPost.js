@@ -31,8 +31,15 @@ function pin() {
         template: post,
         restrict: 'E',
         // templateUrl: '/pinPost.html'
-        controller: function(scope, mainService) {
+        controller: function($scope, mainService) {
+
+            $scope.addImageUrl = function(url) {
+                mainService.boardPost(url);
+            }
+
             function readURL(input) {
+                console.log($scope.file);
+                console.log(input);
                 if (input.files && input.files[0]) {
 
                     var reader = new FileReader();
@@ -58,6 +65,7 @@ function pin() {
                 $('.file-upload-content').hide();
                 $('.image-upload-wrap').show();
             }
+
             $('.image-upload-wrap').bind('dragover', function() {
                 $('.image-upload-wrap').addClass('image-dropping');
             });

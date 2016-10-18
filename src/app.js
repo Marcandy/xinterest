@@ -26,8 +26,30 @@ import './styles/pinpost.scss';
 angular.module('xinterest', [uiRouter])
   .controller('menuCtrl', mainCtrl )
   .service('mainService', mainService)
+  .directive('login', login)
   .directive('home', home)
   .directive('pin',  pin)
+  .directive("fileread", ['mainService', function (mainService) {
+    return {
+      scope: {
+          fileread: "="
+      },
+      link: function (scope, element, attributes) {
+        element.bind("change", function (changeEvent) {
+          var reader = new FileReader();
+          reader.onload = function (loadEvent) {
+            scope.$apply(function () {
+
+              scope.fileread = loadEvent.target.result;
+              console.log(scope.fillread)
+              mainService.boardPost(loadEvent.target.result);
+            });
+          }
+          reader.readAsDataURL(changeEvent.target.files[0]);
+        });
+      }
+    }
+  }])
   .config( function($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('home', {

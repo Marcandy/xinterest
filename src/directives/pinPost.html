@@ -11,7 +11,7 @@
   <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
 
   <div class="image-upload-wrap">
-    <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+    <input class="file-upload-input" type='file' accept="image/*" fileread="fileupload" />
     <div class="drag-text">
       <h3>Drag and drop a file or select add Image</h3>
     </div>
@@ -26,4 +26,14 @@
 
 
 <hr>
+
+
+<h2>Upload Url</h2>
+
+<div class="">
+  <input type="text" name="name" value="url" ng-model='url'>
+  <button type="button" name="button" ng-click='addImageUrl(url)'>Submit</button>
+</div>
+
+
 <h3>Board list</h3>
